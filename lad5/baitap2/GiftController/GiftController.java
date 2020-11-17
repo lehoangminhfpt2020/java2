@@ -73,7 +73,7 @@ public class GiftController {
             System.out.println("\nDELETE GIFT\n");
             System.out.println("Enter Gift ID: ");
             int id = input.nextInt();
-            String sqlDelete = "DELETE FROM `gift` WHERE `gift`.`giftID` ="+id;
+            String sqlDelete = "DELETE FROM gift WHERE gift.GID ="+id;
             stmt.executeUpdate(sqlDelete);
             System.out.println("Gift deleted.");
         }
